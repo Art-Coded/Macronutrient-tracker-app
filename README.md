@@ -18,15 +18,15 @@ A native Android app built with Kotlin and XML created by Art Lyndone Hemplo.
 5. Build and run
 
 ## 3 Onboarding Screen slides
-![Screenshot 1](screenshots/onboarding.png)
+![Screenshot 1](app/screenshots/onboarding.png)
 
 ## Login
-![Screenshot 2](screenshots/Login.png)
+![Screenshot 2](app/screenshots/Login.png)
 
 ## Signup
-![Screenshot 3](screenshots/signup.png)
+![Screenshot 3](app/screenshots/signup.png)
 
 ## Macros Tracked
-![Screenshot 4](screenshots/Diary1.png)
-![Screenshot 5](screenshots/Diary2.png)
-![Screenshot 6](screenshots/Diary3.png)
+![Screenshot 4](app/screenshots/Diary1.png)
+![Screenshot 5](app/screenshots/Diary2.png)
+![Screenshot 6](app/screenshots/Diary3.png)
