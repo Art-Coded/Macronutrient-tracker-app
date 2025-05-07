@@ -44,27 +44,14 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
         app:tabGravity="center"
         app:tabMode="fixed"
-        android:backgroundTint="@color/grey"
         app:tabSelectedTextColor="@color/green"
         app:tabIndicatorColor="@color/green"
         app:tabIndicatorAnimationMode="elastic"
-        app:layout_constraintTop_toBottomOf="@+id/topPart">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dashboard"
-            android:textAllCaps="false"/>
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Charts"
-            android:textAllCaps="false"/>
-        
-    </com.google.android.material.tabs.TabLayout>
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:layout_constraintTop_toBottomOf="@+id/topPart" />
 
     <!-- ViewPager2 for Swiping Through Fragments -->
     <androidx.viewpager2.widget.ViewPager2
