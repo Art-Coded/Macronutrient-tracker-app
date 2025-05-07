@@ -1,4 +1,4 @@
-# My Android App
+# Macrominder - Macronutrients tracker Android App
 
 A native Android app built with Kotlin and XML created by Art Lyndone Hemplo.
 
