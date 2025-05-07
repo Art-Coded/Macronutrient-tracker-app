@@ -23,7 +23,7 @@ A native Android app built with Kotlin and XML created by Art Lyndone Hemplo.
 ## Login
 ![Screenshot 2](app/screenshots/Login.png)
 
-## Signup
+## 4 Signup steps Including the user input of Gender, Birthdate, Height, Weight, and more
 ![Screenshot 3](app/screenshots/signup.png)
 
 ## Macros Tracked
