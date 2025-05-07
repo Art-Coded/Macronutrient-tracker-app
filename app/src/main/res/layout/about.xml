@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Main.About"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/dark_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_grey"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/borderTop"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/alt_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="About"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/borderTop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="@id/borderTop"
+                app:layout_constraintTop_toTopOf="@id/borderTop" />
+
+            <TextView
+                android:id="@+id/Introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Introduction:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/borderTop" />
+
+            <TextView
+                android:id="@+id/IntroductionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:fontFamily="@font/gurmukhiregular"
+                android:text="Macrominder is a nutrition-tracking app built to make managing food macronutrients simple
+and enjoyable, especially for beginners. Its main purpose is to guide users in tracking their
+calorie, protein, fat, and carbohydrate intake through a user-friendly interface designed for
+people who are new to nutrition tracking. What makes Macrominder stand out is its focus on
+worldwide cuisines, offering meal presets tailored specifically to dishes familiar to its users.
+The app addresses the struggles of beginners who find existing nutrition apps overwhelming or
+confusing. By focusing on relevance and simplicity, Macrominder ensures that users can easily
+monitor their meals and meet their health goals without any frustration especially to people
+who’re not familiar with tracking their nutrients as well. Key features include a guided step
+bystep profile creation process to personalize recommendations, a vast database of global
+food items, customizable weight goals, and activity level tracking. With Firebase Authentication
+and Realtime Database, user data is securely stored and accessible. Multi-unit support also
+makes the app flexible as well. Macrominder isn’t just another tracking tool, but it’s also a
+companion that helps users take control of their health and nutrition in a way that feels
+supportive, personalized, and culturally familiar. "
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Introduction" />
+
+            <TextView
+                android:id="@+id/ProblemStatement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Problem Statement:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IntroductionText" />
+
+            <TextView
+                android:id="@+id/ProblemStatementText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:fontFamily="@font/gurmukhiregular"
+                android:text="Many people, especially beginners, struggle with understanding how to measure and
+track the macronutrients in their meals. Most nutrition-tracking apps are either too
+complicated or not user-friendly, leaving beginners frustrated and discouraged. On top
+of that, these apps rarely cater to Filipino cuisine, making it difficult for users to log their
+traditional meals accurately. This creates a gap for people who want to track their
+nutrition in a way that feels easy, relevant, and culturally specific. "
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProblemStatement" />
+
+            <TextView
+                android:id="@+id/Objectives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Objectives:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProblemStatementText" />
+
+            <TextView
+                android:id="@+id/ObjectivesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:fontFamily="@font/gurmukhiregular"
+                android:text="- To simplify the process of meal tracking for beginners by offering a user-friendly interface and guided steps.\n- To help users set and achieve fitness goals by offering personalized nutritional recommendations.\n- To make nutrition tracking accessible and enjoyable for users with minimal effort. "
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Objectives" />
+
+            <TextView
+                android:id="@+id/Programmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Programmed and Presented By:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ObjectivesText" />
+
+            <TextView
+                android:id="@+id/ProgrammerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Art Lyndone A. Hemplo\nBSCS 3A"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Programmer" />
+
+
+            <ImageView
+                android:id="@+id/HiddenBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProgrammerText" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

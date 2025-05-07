@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.macrominder.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainViewPagerFragment"
+            app:destination="@id/mainViewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.macrominder.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.macrominder.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_signupViewPagerFragment"
+            app:destination="@id/signupViewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_mainViewPagerFragment"
+            app:destination="@id/mainViewPagerFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupViewPagerFragment"
+        android:name="com.example.macrominder.signup.SignupViewPagerFragment"
+        android:label="fragment_signup_view_pager"
+        tools:layout="@layout/fragment_signup_view_pager" >
+        <action
+            android:id="@+id/action_signupViewPagerFragment_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainViewPagerFragment"
+        android:name="com.example.macrominder.Main.MainViewPagerFragment"
+        android:label="fragment_main_view_pager"
+        tools:layout="@layout/fragment_main_bottomnav" >
+        <action
+            android:id="@+id/action_mainViewPagerFragment_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainViewPagerFragment_to_createMeal4"
+            app:destination="@id/createMeal" />
+    </fragment>
+    <fragment
+        android:id="@+id/createMeal"
+        android:name="com.example.macrominder.Main.CreateMeal"
+        android:label="foods_create_meal"
+        tools:layout="@layout/foods_create_meal" >
+        <action
+            android:id="@+id/action_createMeal_to_mainViewPagerFragment2"
+            app:destination="@id/mainViewPagerFragment" />
+    </fragment>
+
+
+</navigation>

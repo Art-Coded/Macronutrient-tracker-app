@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Main.TOS">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/borderTop"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/alt_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="TOS / Privacy Policy"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/borderTop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="@id/borderTop"
+                app:layout_constraintTop_toTopOf="@id/borderTop" />
+
+            <TextView
+                android:id="@+id/tosTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="Terms of Service"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/borderTop" />
+
+            <TextView
+                android:id="@+id/tos1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="1. Introduction\n\nWelcome to MacroMinder. By accessing or using our app, you agree to comply with and be bound by these Terms of Service. If you do not agree with these terms, please do not use the app."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tosTitle" />
+
+            <TextView
+                android:id="@+id/tos2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="2. User Registration\n\nTo use the App, you must register an account. You agree to provide accurate and complete information and to keep your account information updated. You are responsible for maintaining the confidentiality of your account credentials."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos1" />
+
+            <TextView
+                android:id="@+id/tos3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="3. Use of the App\n\nMacrominder provides users with health and wellness tools, including tracking calorie intake, exercise, and daily nutrition goals. You agree to use the app in accordance with all applicable laws and regulations."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos2" />
+
+            <TextView
+                android:id="@+id/tos4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="4. Restrictions\nYou may not:\n\n- Modify, distribute, or reverse engineer the App.\n- Use the App for illegal activities or in a manner that could damage or impair the app’s functionality.\n- Share your account with others or allow others to access your account."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos3" />
+
+            <TextView
+                android:id="@+id/tos5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="6. Disclaimers\nThe App provides health-related content but is not intended as a substitute for professional medical advice. Always consult with a healthcare provider before making significant changes to your health or lifestyle."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos4" />
+
+            <TextView
+                android:id="@+id/tos6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="7. Termination\nWe reserve the right to suspend or terminate your account if we believe you are in violation of these Terms of Service."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos5" />
+
+            <TextView
+                android:id="@+id/tos7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="8. Limitation of Liability\nMacroMinder will not be liable for any indirect, incidental, or consequential damages arising from the use of the app. You use the app at your own risk."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos6" />
+
+            <TextView
+                android:id="@+id/tos8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="9. Contact Information\nFor any questions about these Terms of Service, please contact us at [Insert Email Address]."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos7" />
+
+            <TextView
+                android:id="@+id/ppTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="Privacy Policy"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tos8" />
+
+            <TextView
+                android:id="@+id/ppdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="Last Revised: December 18, 2024"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ppTitle" />
+
+            <TextView
+                android:id="@+id/pp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="1. Introduction\nYour privacy is important to the creator, Art lyndone Hemplo. This Privacy Policy explains how we collect, use, and protect your personal information when you use MacroMinder"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ppdate" />
+
+            <TextView
+                android:id="@+id/pp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="2. Information We Collect\nWe collect the following types of information:\n\nPersonal Information: When you register for an account, we may collect personal details like your name, email address, date of birth, gender, weight, and activity level.\nUsage Data: We may collect non-personal information about how you use the app, such as the features you interact with and the amount of time spent using the app."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pp1" />
+
+            <TextView
+                android:id="@+id/pp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="3. How We Use Your Information\nWe use the information collected to:\n\n- Provide and improve the functionality of the app.\n- Offer personalized recommendations and content.\n- Communicate with you regarding updates or changes to the app."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pp2" />
+
+            <TextView
+                android:id="@+id/pp4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="4. Security\nWe implement reasonable security measures to protect your personal information from unauthorized access, disclosure, alteration, and destruction."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pp3" />
+
+            <TextView
+                android:id="@+id/pp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhibold"
+                android:padding="16dp"
+                android:text="5. Your Rights\nYou have the right to access, update, and delete your personal information. You can also manage your preferences related to notifications and data usage in the app settings."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pp4" />
+
+            <ImageView
+                android:id="@+id/HiddenBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/button_color_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pp5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

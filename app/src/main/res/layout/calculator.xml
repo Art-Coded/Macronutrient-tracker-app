@@ -1,0 +1,124 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/inputFieldFirst"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Enter value"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputFieldFirst"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/inputFieldFirst"
+        app:layout_constraintTop_toBottomOf="@+id/inputFieldFirst" />
+
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/fromSpinner"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/fromSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/fromSpinner" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Result:"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gurmukhibold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/toSpinner"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/toSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/toSpinner" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/gurmukhibold"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Result"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/Result"
+        app:layout_constraintTop_toBottomOf="@+id/Result" />
+
+    <TextView
+        android:id="@+id/From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhiregular"
+        android:text="From:"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/fromSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/fromSpinner"
+        app:layout_constraintTop_toTopOf="@+id/fromSpinner" />
+
+    <TextView
+        android:id="@+id/To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhiregular"
+        android:text="To:"
+        android:layout_marginEnd="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/toSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/toSpinner"
+        app:layout_constraintTop_toTopOf="@+id/toSpinner" />
+
+    <ImageView
+        android:id="@+id/birdIcon"
+        android:layout_width="130sp"
+        android:layout_height="138sp"
+        android:layout_marginTop="150dp"
+        android:rotationY="-181"
+        android:src="@drawable/proud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Result" />
+
+    <TextView
+        android:id="@+id/BirdDialog"
+        android:layout_width="195sp"
+        android:layout_height="65sp"
+        android:fontFamily="@font/gurmukhibold"
+        android:gravity="center"
+        android:text="Feel free to convert units anytime you want! :)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/birdIcon"
+        app:layout_constraintEnd_toStartOf="@+id/birdIcon"
+        app:layout_constraintTop_toTopOf="@+id/birdIcon"
+        app:layout_constraintVertical_bias="0.506" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

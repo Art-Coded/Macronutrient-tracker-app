@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/alt_background_color">
+
+    <!-- Consumed -->
+    <LinearLayout
+        android:id="@+id/progressbar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:layout_marginStart="5dp">
+
+        <!-- FrameLayout for overlaying TextView on CircularProgressBar -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+
+            <com.example.macrominder.views.CircularProgressBar
+                android:id="@+id/progressBarConsumed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- LinearLayout to separate text inside the circle -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tvConsumedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/gurmukhibold" />
+
+                <TextView
+                    android:id="@+id/tvConsumed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kcal"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/gurmukhibold" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consumed"
+            android:textSize="14sp"
+            android:fontFamily="@font/gurmukhibold"
+            android:layout_marginTop="12dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Remaining -->
+    <LinearLayout
+        android:id="@+id/progressbar3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:layout_marginEnd="5dp">
+
+        <!-- FrameLayout for overlaying TextView on CircularProgressBar -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+
+            <com.example.macrominder.views.CircularProgressBar
+                android:id="@+id/progressBarRemaining"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- LinearLayout to separate text inside the circle -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tvRemainingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/gurmukhibold" />
+
+                <TextView
+                    android:id="@+id/tvRemaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kcal"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/gurmukhibold" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/gurmukhibold"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

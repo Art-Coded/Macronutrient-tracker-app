@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/alt_background_color">
+
+    <!-- Energy Progress -->
+    <TextView
+        android:id="@+id/tvEnergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Energy - 0 / No Data"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gurmukhiregular"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <!-- android:max Should be no data cuz no Database yet -->
+    <ProgressBar
+        android:id="@+id/progressBarEnergy"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:max="1875"
+        android:progress="0"
+        android:elevation="4dp"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Protein Progress -->
+    <TextView
+        android:id="@+id/tvProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein - 0 / No Data"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gurmukhiregular"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarProtein"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="0"
+        android:elevation="4dp"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Carbs Progress -->
+    <TextView
+        android:id="@+id/tvCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Net Carbs - 0 / No Data"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gurmukhiregular"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarCarbs"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="0"
+        android:elevation="4dp"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Fat Progress -->
+    <TextView
+        android:id="@+id/tvFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fat - 0 / No Data"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gurmukhiregular"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarFat"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="0"
+        android:elevation="4dp"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

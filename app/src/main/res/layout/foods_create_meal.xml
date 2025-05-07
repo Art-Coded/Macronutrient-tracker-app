@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.CreateMeal"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Background Image -->
+            <ImageView
+                android:id="@+id/borderTop"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/alt_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_cancel"
+                app:layout_constraintStart_toStartOf="@+id/borderTop"
+                app:layout_constraintTop_toTopOf="@+id/borderTop" />
+
+            <ImageView
+                android:id="@+id/tutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:src="@drawable/ic_tutorial"
+                app:layout_constraintBottom_toBottomOf="@+id/MealItems"
+                app:layout_constraintStart_toEndOf="@+id/MealItems"
+                app:layout_constraintTop_toTopOf="@+id/MealItems"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/CreateMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="146dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="145dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Create Meal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/borderTop"
+                app:layout_constraintEnd_toEndOf="@+id/borderTop"
+                app:layout_constraintStart_toStartOf="@+id/borderTop"
+                app:layout_constraintTop_toTopOf="@+id/borderTop" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputMealName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gurmukhiregular"
+                android:hint="Meal Name"
+                android:textColorHint="@color/white"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:counterTextColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/borderTop">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="30"
+                    android:background="@drawable/alt_background_color"
+                    android:fontFamily="@font/gurmukhiregular"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="318dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/MealItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Meal Items"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/mealRecyclerView"
+                app:layout_constraintStart_toStartOf="@+id/mealRecyclerView" />
+
+            <!-- RecyclerView for Meal Items -->
+
+            <TextView
+                android:id="@+id/totalNutrientsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/gurmukhibold"
+                android:text="Total Nutrient Data:"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputMealName" />
+
+            <TextView
+                android:id="@+id/totalNutrientsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gurmukhiregular"
+                android:text="Nutrient List"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/totalNutrientsTitle"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/totalNutrientsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/totalNutrientsTitle" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mealRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/alt_background_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalNutrientsTextView" />
+
+            <TextView
+                android:id="@+id/Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/gurmukhiregular"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/borderTop"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/AddMealItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/gurmukhiregular"
+                android:gravity="center"
+                android:text="+ Add Meal Item"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/mealRecyclerView"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

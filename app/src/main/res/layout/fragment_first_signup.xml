@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.signup.FirstSignup"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="119dp"
+        android:layout_height="117dp"
+        android:alpha="0.5"
+        android:elevation="0dp"
+        android:src="@drawable/spiralcropped3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="129dp"
+        android:layout_height="314dp"
+        android:alpha="0.5"
+        android:src="@drawable/spiralcropped0"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhibold"
+        android:gravity="center"
+        android:text="Profile Details"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:background="@drawable/edittext_border"
+        android:elevation="2dp"
+        android:fontFamily="@font/gurmukhiregular"
+        android:hint="Select your sex"
+        android:paddingLeft="50dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.105" />
+
+
+    <TextView
+        android:id="@+id/Birthday"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:background="@drawable/edittext_border"
+        android:elevation="4dp"
+        android:fontFamily="@font/gurmukhiregular"
+        android:hint="Select your birthday"
+        android:paddingLeft="50dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.370" />
+
+
+    <TextView
+        android:id="@+id/Height"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:background="@drawable/edittext_border"
+        android:elevation="2dp"
+        android:fontFamily="@font/gurmukhiregular"
+        android:hint="Select your height"
+        android:paddingLeft="50dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.630" />
+
+    <TextView
+        android:id="@+id/Weight"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:background="@drawable/edittext_border"
+        android:elevation="2dp"
+        android:fontFamily="@font/gurmukhiregular"
+        android:hint="Select your weight"
+        android:paddingLeft="50dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.890" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gurmukhiregular"
+        android:gravity="center"
+        android:text="We'll use this information to calculate and\n provide you with daily personalized\n recommendations"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="310dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button_color_inactive_green"
+        android:fontFamily="@font/gurmukhibold"
+        android:letterSpacing="0.05"
+        android:text="NEXT"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhiregular"
+        android:gravity="center"
+        android:text="Enter your details so Macrominder\n can customize your targets"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="348dp"
+        android:layout_height="269dp"
+        android:elevation="0dp"
+        android:src="@drawable/alt_background_color"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <ImageView
+        android:id="@+id/imageGender"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/gender"
+        app:layout_constraintBottom_toBottomOf="@+id/Gender"
+        app:layout_constraintEnd_toEndOf="@+id/Gender"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/Gender"
+        app:layout_constraintTop_toTopOf="@+id/Gender"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageCake"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/cake"
+        app:layout_constraintBottom_toBottomOf="@+id/Birthday"
+        app:layout_constraintEnd_toEndOf="@+id/Birthday"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/Birthday"
+        app:layout_constraintTop_toTopOf="@+id/Birthday"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageHeight"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/height"
+        app:layout_constraintBottom_toBottomOf="@+id/Height"
+        app:layout_constraintEnd_toEndOf="@+id/Height"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/Height"
+        app:layout_constraintTop_toTopOf="@+id/Height"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageWeight"
+        android:layout_width="24dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/weight"
+        app:layout_constraintBottom_toBottomOf="@+id/Weight"
+        app:layout_constraintEnd_toEndOf="@+id/Weight"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/Weight"
+        app:layout_constraintTop_toTopOf="@+id/Weight"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

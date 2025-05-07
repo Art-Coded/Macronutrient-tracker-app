@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/alt_background_color"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/saveChangesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTE"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gurmukhibold"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/saveChangesMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you wish to discard your changes?"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/gurmukhiregular"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/discardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gurmukhibold"
+            android:text="Discard"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/gurmukhibold"
+            android:text="Continue"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#72bd39</color>
+    <color name="grey">#272a3b</color>
+    <color name="dark_green">#00796B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="real_grey">#404251</color>
+    <color name="red">#F41313</color>
+    <color name="inactive_green">#4A6F35</color>
+    <color name="cyan">#31D0CB</color>
+    <color name="purple">#9F33B5</color>
+    <color name="divider_color">#707070</color>
+    <color name="dark_grey">#0f1121</color>
+
+
+
+</resources>

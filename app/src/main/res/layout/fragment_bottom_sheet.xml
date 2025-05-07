@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+
+    <ImageView
+        android:id="@+id/AppleBackground"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:elevation="40dp"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toTopOf="@+id/CreateFoodText"
+        app:layout_constraintEnd_toStartOf="@+id/BlueberryBackground"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BlueberryBackground"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Apple"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="41dp"
+        android:src="@drawable/apple"
+        app:layout_constraintBottom_toBottomOf="@+id/AppleBackground"
+        app:layout_constraintEnd_toEndOf="@+id/AppleBackground"
+        app:layout_constraintStart_toStartOf="@+id/AppleBackground"
+        app:layout_constraintTop_toTopOf="@+id/AppleBackground" />
+
+    <TextView
+        android:id="@+id/CreateMealText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhibold"
+        android:text="Create Meal"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/AppleBackground"
+        app:layout_constraintStart_toStartOf="@+id/AppleBackground"
+        app:layout_constraintTop_toBottomOf="@+id/AppleBackground" />
+
+    <ImageView
+        android:id="@+id/BlueberryBackground"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:elevation="40dp"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CreateFoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhibold"
+        android:text="Create Food"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/BlueberryBackground"
+        app:layout_constraintStart_toStartOf="@+id/BlueberryBackground"
+        app:layout_constraintTop_toBottomOf="@+id/BlueberryBackground" />
+
+    <ImageView
+        android:id="@+id/ScanBackground"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:elevation="40dp"
+        android:src="@drawable/circle"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/BlueberryBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/BlueberryBackground"
+        app:layout_constraintTop_toTopOf="@+id/BlueberryBackground" />
+
+    <ImageView
+        android:id="@+id/Peach"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_scan"
+        android:elevation="41dp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="@+id/ScanBackground"
+        app:layout_constraintEnd_toEndOf="@+id/ScanBackground"
+        app:layout_constraintStart_toStartOf="@+id/ScanBackground"
+        app:layout_constraintTop_toTopOf="@+id/ScanBackground" />
+
+    <TextView
+        android:id="@+id/ScanBarcodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhibold"
+        android:text="Scan Food"
+        android:layout_marginTop="8dp"
+        android:alpha="0.5"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/ScanBackground"
+        app:layout_constraintStart_toStartOf="@+id/ScanBackground"
+        app:layout_constraintTop_toBottomOf="@+id/ScanBackground" />
+
+    <ImageView
+        android:id="@+id/Blueberry"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="41dp"
+        android:src="@drawable/blueberries"
+        app:layout_constraintBottom_toBottomOf="@+id/BlueberryBackground"
+        app:layout_constraintEnd_toEndOf="@+id/BlueberryBackground"
+        app:layout_constraintStart_toStartOf="@+id/BlueberryBackground"
+        app:layout_constraintTop_toTopOf="@+id/BlueberryBackground" />
+
+    <TextView
+        android:id="@+id/ComingSoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gurmukhiregular"
+        android:text="Coming Soon!"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/ScanBarcodeText"
+        app:layout_constraintHorizontal_bias="0.490"
+        app:layout_constraintStart_toStartOf="@+id/ScanBarcodeText"
+        app:layout_constraintTop_toBottomOf="@+id/ScanBarcodeText" />
+
+    <TextView
+        android:id="@+id/emptyfill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateFoodText"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
