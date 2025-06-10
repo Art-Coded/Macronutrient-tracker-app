@@ -16,6 +16,7 @@ class MainViewPagerFragment : Fragment() {
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var fab: FloatingActionButton
     private lateinit var auth: FirebaseAuth
+    private var lastSelectedItemId = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,26 +41,23 @@ class MainViewPagerFragment : Fragment() {
             bottomSheetFragment.show(childFragmentManager, bottomSheetFragment.tag)
         }
 
+
+
+        //Add a simple "debounce" or "prevent double-click" mechanism on the BottomNavigationView selection so it ignores repeated clicks rapidly.
         bottomNavigationView.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.home2 -> {
-                    replaceFragment(Home())
-                    true
-                }
-                R.id.diary -> {
-                    replaceFragment(Diary())
-                    true
-                }
-                R.id.foods -> {
-                    replaceFragment(Foods())
-                    true
-                }
-                R.id.more -> {
-                    replaceFragment(More())
-                    true
-                }
-                else -> false
+            if (item.itemId == lastSelectedItemId) {
+                // Ignore repeated clicks on the same item
+                return@setOnItemSelectedListener false
             }
+            lastSelectedItemId = item.itemId
+            when (item.itemId) {
+                R.id.home2 -> replaceFragment(Home())
+                R.id.diary -> replaceFragment(Diary())
+                R.id.foods -> replaceFragment(Foods())
+                R.id.more -> replaceFragment(More())
+                else -> return@setOnItemSelectedListener false
+            }
+            true
         }
 
 

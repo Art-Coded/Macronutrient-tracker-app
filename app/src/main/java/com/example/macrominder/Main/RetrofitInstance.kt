@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
-    private const val BASE_URL = "Enter your API here"
+    private const val BASE_URL = "https://api.nal.usda.gov/fdc/v1/"
 
     val api: USDAApiService by lazy {
         Retrofit.Builder()
