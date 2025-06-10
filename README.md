@@ -1,4 +1,4 @@
-# Macrominder - Macronutrients tracker Android App
+# Macrominder - Macronutrients tracker Android App!
 
 A native Android app built with Kotlin and XML created by Art Lyndone Hemplo.
 
@@ -14,4 +14,19 @@ A native Android app built with Kotlin and XML created by Art Lyndone Hemplo.
 1. Clone the repo
 2. Open in Android Studio
 3. Add your `google-services.json` to the `app/` folder for your own Firebase API key
-4. Build and run
+4. Add your own USDA gov api key in RetrofitInstance.kt
+5. Build and run
+
+## 3 Onboarding Screen slides
+![Screenshot 1](app/screenshots/onboarding.png)
+
+## Login
+![Screenshot 2](app/screenshots/Login.png)
+
+## 4 Signup steps Including the user input of Gender, Birthdate, Height, Weight, and more
+![Screenshot 3](app/screenshots/signup.png)
+
+## Macros Tracked
+![Screenshot 4](app/screenshots/Diary1.png)
+![Screenshot 5](app/screenshots/Diary2.png)
+![Screenshot 6](app/screenshots/Diary3.png)
